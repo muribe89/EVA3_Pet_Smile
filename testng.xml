@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteLogin">
+  <test name="Datos Correctos">
+    <classes>
+      <class name="TestNG.TestNgLogin_correcto"/>
+    </classes>
+  </test>
+  <test name="Datos Incorrectos">
+    <classes>
+      <class name="TestNG.TestNgLogin_incorrecto"/>
+    </classes>
+  </test>
+  <test name="Datos Vacios">
+    <classes>
+      <class name="TestNG.TestNgLogin_vacio"/>
+    </classes>
+  </test>
+</suite>
