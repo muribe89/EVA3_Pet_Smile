@@ -87,6 +87,9 @@
 					  <option value="perro">Perro</option>
 					  <option value="gato">Gato</option>
 					  <option value="ave">Ave</option>
+					  <option value="reptil">Reptil</option>
+					  <option value="anfibio">Anfibio</option>
+					  <option value="pez">Pez</option>
 					</select>  
 				  </div>
 				  <div class="mb-3">

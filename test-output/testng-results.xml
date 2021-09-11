@@ -1,106 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test" duration-ms="23771" started-at="2021-09-11T04:27:42 CLST" finished-at="2021-09-11T04:28:06 CLST">
+  <suite name="Default suite" duration-ms="2750" started-at="2021-09-11T12:11:56 CLST" finished-at="2021-09-11T12:11:59 CLST">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner_LoginCorrecto@cb51256]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner_LoginIncorrecto@4923ab24]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner_RegistrarHora@5ed828d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Conexión a base de datos" duration-ms="242" started-at="2021-09-11T04:27:42 CLST" finished-at="2021-09-11T04:27:42 CLST">
-      <class name="TestNG.bd_connectTest">
-        <test-method status="PASS" signature="test()[pri:0, instance:TestNG.bd_connectTest@1786dec2]" name="test" duration-ms="214" started-at="2021-09-11T04:27:42 CLST" finished-at="2021-09-11T04:27:42 CLST">
+    <test name="Default test" duration-ms="2750" started-at="2021-09-11T12:11:56 CLST" finished-at="2021-09-11T12:11:59 CLST">
+      <class name="TestNG.TestNgLogin_correcto">
+        <test-method status="PASS" signature="abrir_chrome()[pri:0, instance:TestNG.TestNgLogin_correcto@2d8f65a4]" name="abrir_chrome" is-config="true" duration-ms="1742" started-at="2021-09-11T12:11:56 CLST" finished-at="2021-09-11T12:11:58 CLST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- TestNG.bd_connectTest -->
-    </test> <!-- Conexión a base de datos -->
-    <test name="Datos Correctos" duration-ms="7425" started-at="2021-09-11T04:27:42 CLST" finished-at="2021-09-11T04:27:50 CLST">
-      <class name="TestRunner.Runner_LoginCorrecto">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.Runner_LoginCorrecto@cb51256]" name="setUpClass" is-config="true" duration-ms="381" started-at="2021-09-11T04:27:42 CLST" finished-at="2021-09-11T04:27:42 CLST">
+        </test-method> <!-- abrir_chrome -->
+        <test-method status="PASS" signature="login()[pri:0, instance:TestNG.TestNgLogin_correcto@2d8f65a4]" name="login" duration-ms="131" started-at="2021-09-11T12:11:58 CLST" finished-at="2021-09-11T12:11:58 CLST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner_LoginCorrecto@cb51256]" name="runScenario" duration-ms="6960" started-at="2021-09-11T04:27:43 CLST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-11T04:27:49 CLST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verificacion de ingreso de sesion"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Realizacion de casos ingresando nombre de usuario y contrase�a]"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="salir()[pri:0, instance:TestNG.TestNgLogin_correcto@2d8f65a4]" name="salir" is-config="true" duration-ms="845" started-at="2021-09-11T12:11:58 CLST" finished-at="2021-09-11T12:11:59 CLST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.Runner_LoginCorrecto@cb51256]" name="tearDownClass" is-config="true" duration-ms="79" started-at="2021-09-11T04:27:49 CLST" finished-at="2021-09-11T04:27:50 CLST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.Runner_LoginCorrecto -->
-    </test> <!-- Datos Correctos -->
-    <test name="Datos Incorrectos" duration-ms="5295" started-at="2021-09-11T04:27:50 CLST" finished-at="2021-09-11T04:27:55 CLST">
-      <class name="TestRunner.Runner_LoginIncorrecto">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.Runner_LoginIncorrecto@4923ab24]" name="setUpClass" is-config="true" duration-ms="11" started-at="2021-09-11T04:27:50 CLST" finished-at="2021-09-11T04:27:50 CLST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner_LoginIncorrecto@4923ab24]" name="runScenario" duration-ms="5259" started-at="2021-09-11T04:27:50 CLST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-11T04:27:55 CLST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verificacion de ingreso de sesion"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Realizacion de casos ingresando nombre de usuario y contrase�a]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.Runner_LoginIncorrecto@4923ab24]" name="tearDownClass" is-config="true" duration-ms="24" started-at="2021-09-11T04:27:55 CLST" finished-at="2021-09-11T04:27:55 CLST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.Runner_LoginIncorrecto -->
-    </test> <!-- Datos Incorrectos -->
-    <test name="Agendar Hora" duration-ms="10783" started-at="2021-09-11T04:27:55 CLST" finished-at="2021-09-11T04:28:06 CLST">
-      <class name="TestRunner.Runner_RegistrarHora">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.Runner_RegistrarHora@5ed828d]" name="setUpClass" is-config="true" duration-ms="11" started-at="2021-09-11T04:27:55 CLST" finished-at="2021-09-11T04:27:55 CLST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner_RegistrarHora@5ed828d]" name="runScenario" duration-ms="10755" started-at="2021-09-11T04:27:55 CLST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-11T04:28:06 CLST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verificacion de ingreso de sesion"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Realizacion de casos ingresando nombre de usuario y contrase�a]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.Runner_RegistrarHora@5ed828d]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2021-09-11T04:28:06 CLST" finished-at="2021-09-11T04:28:06 CLST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.Runner_RegistrarHora -->
-    </test> <!-- Agendar Hora -->
-  </suite> <!-- Test -->
+        </test-method> <!-- salir -->
+      </class> <!-- TestNG.TestNgLogin_correcto -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
