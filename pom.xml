@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.bancoplatinum</groupId>
-  <artifactId>login</artifactId>
+  <groupId>com.petSmile</groupId>
+  <artifactId>ReservaHora</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>login Maven Webapp</name>
+  <name>Clinica Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
 <dependency>
@@ -34,19 +34,18 @@
 <dependency>
 	<groupId>io.cucumber</groupId>
 	<artifactId>cucumber-core</artifactId>
-	<version>4.5.4</version>
+	<version>6.7.0</version>
 </dependency>
 <dependency>
 	<groupId>io.cucumber</groupId>
 	<artifactId>cucumber-java</artifactId>
-	<version>4.3.1</version>
+	<version>6.7.0</version>
 	<scope>test</scope>
 </dependency>
 <dependency>
     <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-junit</artifactId>
-    <version>4.5.4</version>
-    <scope>test</scope>
+    <artifactId>cucumber-testng</artifactId>
+    <version>6.7.0</version>
 </dependency>
 <dependency>
     <groupId>info.cukes</groupId>
@@ -57,11 +56,10 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>6.14.3</version>
-    <scope>test</scope>
+    <version>7.3.0</version>
 </dependency>
   </dependencies>
   <build>
-    <finalName>login</finalName>
+    <finalName>clinica</finalName>
   </build>
 </project>

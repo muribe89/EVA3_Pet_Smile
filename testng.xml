@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SuiteLogin">
+<suite name="Test">
+<test name="Conexión a base de datos">
+    <classes>
+      <class name="TestNG.bd_connectTest"/>
+    </classes>
+  </test>
   <test name="Datos Correctos">
     <classes>
-      <class name="TestNG.TestNgLogin_correcto"/>
+      <class name="TestRunner.Runner_LoginCorrecto"/>
     </classes>
   </test>
   <test name="Datos Incorrectos">
     <classes>
-      <class name="TestNG.TestNgLogin_incorrecto"/>
+      <class name="TestRunner.Runner_LoginIncorrecto"/>
     </classes>
   </test>
-  <test name="Datos Vacios">
+  <test name="Agendar Hora">
     <classes>
-      <class name="TestNG.TestNgLogin_vacio"/>
+      <class name="TestRunner.Runner_RegistrarHora"/>
     </classes>
   </test>
 </suite>

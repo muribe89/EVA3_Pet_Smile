@@ -16,12 +16,12 @@ public class TestNgLogin_incorrecto {
 				System.setProperty("webdriver.chrome.driver", "./src/test/resources/ChromeDriver/chromedriver.exe");
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
-				driver.get("http://localhost:8070/login/index.jsp");
+				driver.get("http://localhost:8070/clinica/index.jsp");
 		  }
 	  @Test
 	  public void login() {
 			System.out.println("Este paso ingresa el nombre de usuario correcto y contraseña incorrecta en la pagina de login");
-			driver.findElement(By.id("username")).sendKeys("roly");
+			driver.findElement(By.id("nombreUsuario")).sendKeys("leo");
 			driver.findElement(By.id("password")).sendKeys("12345");
 	  }
 	  

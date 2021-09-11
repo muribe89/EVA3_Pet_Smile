@@ -11,7 +11,7 @@
    <jsp:useBean id="obj_Login_Bean" class="bean.Login_Bean"></jsp:useBean>
    <jsp:setProperty property="*" name="obj_Login_Bean"/>
    <%
-     System.out.println(obj_Login_Bean.getUsername());
+     System.out.println(obj_Login_Bean.getNombreUsuario());
      System.out.println(obj_Login_Bean.getPassword());
      Login_Modal obj_Login_Modal=new Login_Modal();
      boolean flag=obj_Login_Modal.check_user_name(obj_Login_Bean);
@@ -19,14 +19,14 @@
      session.setAttribute("user_session", obj_Login_Bean);
     %>
     <script type="text/javascript">
-       window.location.href="http://localhost:8070/login/profile/view/Home.jsp";
+       window.location.href="http://localhost:8070/clinica/profile/view/Home.jsp";
     </script>
   <%
 }else{
  session.setAttribute("login_message", "Inicio de sesión fallido, usuario y/o contraseña son incorrectos");
   %>
   <script type="text/javascript">
-   window.location.href="http://localhost:8070/login/index.jsp";
+   window.location.href="http://localhost:8070/clinica/index.jsp";
    </script>
   <%
  }

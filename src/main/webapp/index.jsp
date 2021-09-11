@@ -4,25 +4,45 @@ pageEncoding="UTF-8"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<title>Login</title>
 </head>
 <body>
 <center>
-<h3>Login</h3>
-<form action="profile/controller/Sign_in_controller.jsp" method="post">
-<label>Usuario:</label>
-<input type="text" name="username" id="username"> <br><br>
-<label>Contraseña:</label>
-<input type="password" name="password" id="password"><br><br>
-<input type="submit" value="Entrar" id="loginBtn">
-</form>
-<%
-String message=(String)session.getAttribute("login_message");
-if(message!=null){
-out.println(message);
-session.removeAttribute("login_message");
-}
-%>
+<h3>Pet Smile</h3>
+<section class="vh-100" style="background-color: #508bfc;">
+		<div class="container py-5 h-100">
+		  <div class="row d-flex justify-content-center align-items-center h-100">
+			<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+			  <div class="card shadow-2-strong" style="border-radius: 1rem;">
+				<div class="card-body p-5 text-center">
+				<form action="profile/controller/Sign_in_controller.jsp" method="POST" class="needs-validation">
+				  <h3 class="mb-5">Login</h3>
+	  
+				  <div class="form-outline mb-4">
+					<input type="text" id="nombreUsuario" name="nombreUsuario"class="form-control form-control-lg" placeholder="Usuario" required autofocus/>
+				  </div>
+	  
+				  <div class="form-outline mb-4">
+					<input type="password" id="password" name="password"class="form-control form-control-lg" placeholder="Password" required autofocus/>
+				  </div>
+				  <div>
+	  				<%
+					String message=(String)session.getAttribute("login_message");
+					if(message!=null){
+					out.println(message);
+					session.removeAttribute("login_message");
+					}
+					%>
+				  </div>
+				  <button class="btn btn-primary btn-lg btn-block" type="submit" id="loginBtn">Entrar</button>
+				</form>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
 </center>
 </body>
 </html>

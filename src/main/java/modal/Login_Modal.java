@@ -12,25 +12,14 @@ public class Login_Modal {
   PreparedStatement ps=null;
   ResultSet rs=null;
   try {
-   String qurey="SELECT u.username, u.password, p.rut, p.nombre, p.apellido, p.telefono\r\n" + 
-   		"FROM banco_platinum.usuario u INNER JOIN banco_platinum.persona p \r\n" + 
-   		"ON u.rut = p.rut\r\n" + 
-   		"WHERE u.username=? and u.password=?";
+   String qurey="SELECT * FROM clinica.usuario" +
+   		" WHERE nombreUsuario=? and password=?";
    ps=connection.prepareStatement(qurey);
-   ps.setString(1, obj_Login_Bean.getUsername());
+   ps.setString(1, obj_Login_Bean.getNombreUsuario());
    ps.setString(2, obj_Login_Bean.getPassword());
    System.out.println(ps);
    rs=ps.executeQuery();
-   
    if(rs.next()){
-	   System.out.println(rs.getString(3));
-	   obj_Login_Bean.setRut(rs.getString(3));
-	   System.out.println(rs.getString(4));
-	   obj_Login_Bean.setNombre(rs.getString(4));
-	   System.out.println(rs.getString(5));
-	   obj_Login_Bean.setApellido(rs.getString(5));
-	   System.out.println(rs.getString(6));
-	   obj_Login_Bean.setTelefono(rs.getString(6));
     flag=true;
    }else {
 	   System.out.println("Inicio de sesión fallido, usuario y/o contraseña son incorrectos");
